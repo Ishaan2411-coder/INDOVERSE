@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #00ffcc;
+    text-shadow: 0 0 20px #00ffcc;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00ffcc;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cover {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    color: #00ffcc;
+}
+
+.offer {
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.old {
+    text-decoration: line-through;
+}
+
+.new {
+    color: #00ffcc;
+}
+
+.icons i {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.disclaimer {
+    max-width: 600px;
+    margin: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
