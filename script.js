@@ -1,11 +1,18 @@
-let selectedRating = 0;
+function showTab(tabId) {
+    document.querySelectorAll(".tab").forEach(tab => {
+        tab.classList.remove("active");
+    });
+    document.getElementById(tabId).classList.add("active");
+}
 
-function rate(star) {
-    selectedRating = star;
+let rating = 0;
+
+function rate(num) {
+    rating = num;
     let stars = document.querySelectorAll(".stars span");
 
-    stars.forEach((s, index) => {
-        if (index < star) {
+    stars.forEach((s, i) => {
+        if (i < num) {
             s.classList.add("active");
         } else {
             s.classList.remove("active");
@@ -14,22 +21,13 @@ function rate(star) {
 }
 
 function submitFeedback() {
-    let text = document.getElementById("feedbackText").value;
-
-    if (selectedRating === 0) {
-        alert("Please select rating!");
+    if (rating === 0) {
+        alert("Select rating!");
         return;
     }
 
-    document.getElementById("thankYouMsg").innerText =
-        "Thanks for your feedback! ⭐ " + selectedRating + "/5";
+    document.getElementById("msg").innerText =
+        "Thanks for your feedback! ⭐ " + rating + "/5";
 
-    document.getElementById("feedbackText").value = "";
-
-    let stars = document.querySelectorAll(".stars span");
-    stars.forEach(s => s.classList.remove("active"));
-}function scrollToBooks() {
-    document.getElementById("books").scrollIntoView({
-        behavior: "smooth"
-    });
+    document.getElementById("fb").value = "";
 }
