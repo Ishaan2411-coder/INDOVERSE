@@ -1,14 +1,77 @@
-.coupon-box {
-    margin-bottom: 20px;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: white;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #00ffcc;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #00ffcc;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.price {
+    color: #00ffcc;
 }
 
 .coupon-box input {
     padding: 10px;
-    border-radius: 5px;
-    border: none;
 }
 
-#couponMsg {
-    margin-top: 10px;
-    color: #00ffcc;
+.stars span {
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+}
+
+.stars span.active {
+    color: gold;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
 }
