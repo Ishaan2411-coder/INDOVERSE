@@ -5,26 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>INDOVERSE</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
+
 <body>
 
-<!-- SIDEBAR -->
-<div class="sidebar">
-    <h2>INDOVERSE</h2>
-    <button onclick="showTab('books')">📚 Books</button>
-    <button onclick="showTab('buys')">🛒 Your Buys</button>
-    <button onclick="showTab('feedback')">⭐ Feedback</button>
-</div>
-
-<!-- CONTENT -->
-<div class="content">
+<!-- HERO -->
+<section class="hero">
+    <h1>INDOVERSE</h1>
+    <p>A Universe Beyond Imagination</p>
+    <button class="btn" onclick="scrollToBooks()">Explore Books</button>
+</section>
 
 <!-- BOOKS -->
-<div id="books" class="tab active">
+<section class="section" id="books">
     <h2>Books</h2>
 
     <div class="books">
@@ -63,46 +60,23 @@
     </div>
 
     <div class="offer">
-        🔥 FULL INDOVERSE SET ₹399
+        🔥 INDOVERSE FULL SET <br>
+        <span class="old">₹499</span> → <span class="new">₹399</span>
     </div>
+</section>
 
-    <footer>
-        © 2026 INDOVERSE | All Rights Reserved <br>
-        ✍ Ishaan Kr. Singh
-    </footer>
-</div>
+<!-- ABOUT -->
+<section class="section">
+    <h2>About</h2>
+    <p>Ishaan Kr. Singh<br>Creator of INDOVERSE</p>
 
-<!-- YOUR BUYS -->
-<div id="buys" class="tab">
-    <h2>Your Buys</h2>
-    <p>No purchases yet</p>
-</div>
-
-<!-- FEEDBACK -->
-<div id="feedback" class="tab">
-    <h2>Feedback</h2>
-
-    <div class="stars">
-        <span onclick="rate(1)">★</span>
-        <span onclick="rate(2)">★</span>
-        <span onclick="rate(3)">★</span>
-        <span onclick="rate(4)">★</span>
-        <span onclick="rate(5)">★</span>
-    </div>
-
-    <textarea id="fb" placeholder="Write your feedback..."></textarea>
-    <button class="btn" onclick="submitFeedback()">Submit</button>
-
-    <p id="msg"></p>
-
-    <div class="social">
+    <div class="icons">
         <a href="https://www.youtube.com/@IshaanSingh-x9f"><i class="fa-brands fa-youtube"></i></a>
         <a href="https://www.instagram.com/singhs_creations01/"><i class="fa-brands fa-instagram"></i></a>
     </div>
-</div>
+</section>
 
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
+<!-- FOOTER -->
+<footer class="footer">
+    © 2026 INDOVERSE | All Rights Reserved <br>
+    ✍ Ish
