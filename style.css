@@ -25,7 +25,7 @@ body {
 
 /* BUTTON */
 .btn {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 10px 20px;
     background: #00ffcc;
     border: none;
@@ -77,10 +77,34 @@ body {
     color: #00ffcc;
 }
 
+/* FEEDBACK */
+.stars span {
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+}
+
+.stars span.active {
+    color: gold;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
 /* ICONS */
 .icons i {
     font-size: 30px;
     margin: 10px;
+}
+
+/* DISCLAIMER */
+.disclaimer {
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.7;
 }
 
 /* FOOTER */
