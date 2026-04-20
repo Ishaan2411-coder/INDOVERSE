@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -31,30 +30,35 @@
             <h3>SAHAY</h3>
             <p>First 3 Chapters Free</p>
             <div class="price">₹59</div>
+            <button class="btn">Buy Now (Test)</button>
         </div>
 
         <div class="card">
             <img src="INDOVAR BOOK.png" class="cover">
             <h3>INDOVAR</h3>
             <div class="price">₹99</div>
+            <button class="btn">Buy Now (Test)</button>
         </div>
 
         <div class="card">
             <img src="PARADOX BOOK.png" class="cover">
             <h3>PARADOX</h3>
             <div class="price">₹99</div>
+            <button class="btn">Buy Now (Test)</button>
         </div>
 
         <div class="card">
             <img src="FRACTURE BOOK.png" class="cover">
             <h3>FRACTURE</h3>
             <div class="price">₹99</div>
+            <button class="btn">Buy Now (Test)</button>
         </div>
 
         <div class="card">
             <img src="ASCENT BOOK.png" class="cover">
             <h3>ASCENT</h3>
             <div class="price">₹99</div>
+            <button class="btn">Buy Now (Test)</button>
         </div>
 
     </div>
@@ -62,13 +66,27 @@
     <div class="offer">
         🔥 INDOVERSE FULL SET <br>
         <span class="old">₹499</span> → <span class="new">₹399</span>
+        <br><br>
+        <button class="btn">Unlock Full Set (Test)</button>
     </div>
 </section>
 
-<!-- ABOUT -->
+<!-- FEEDBACK -->
 <section class="section">
-    <h2>About</h2>
-    <p>Ishaan Kr. Singh<br>Creator of INDOVERSE</p>
+    <h2>Feedback</h2>
+
+    <div class="stars">
+        <span onclick="rate(1)">★</span>
+        <span onclick="rate(2)">★</span>
+        <span onclick="rate(3)">★</span>
+        <span onclick="rate(4)">★</span>
+        <span onclick="rate(5)">★</span>
+    </div>
+
+    <textarea id="fb" placeholder="Write your feedback..."></textarea>
+    <button class="btn" onclick="submitFeedback()">Submit</button>
+
+    <p id="msg"></p>
 
     <div class="icons">
         <a href="https://www.youtube.com/@IshaanSingh-x9f"><i class="fa-brands fa-youtube"></i></a>
@@ -76,7 +94,10 @@
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    © 2026 INDOVERSE | All Rights Reserved <br>
-    ✍ Ish
+<!-- DISCLAIMER -->
+<section class="section">
+    <h2>Disclaimer</h2>
+    <p class="disclaimer">
+        All content under INDOVERSE is original intellectual property of Ishaan Kr. Singh.
+        Unauthorized reproduction is strictly prohibited.
+    </p
