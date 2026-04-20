@@ -90,3 +90,28 @@ textarea {
     color: #00ffcc;
     transform: scale(1.2);
 }
+.social {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;
+    margin-top: 30px;
+}
+
+.social i {
+    font-size: 40px;           /* bada size */
+    margin: 15px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* YouTube hover */
+.social i.fa-youtube:hover {
+    color: red;
+    transform: scale(1.3);
+}
+
+/* Instagram hover */
+.social i.fa-instagram:hover {
+    color: #ff00aa;
+    transform: scale(1.3);
+}
