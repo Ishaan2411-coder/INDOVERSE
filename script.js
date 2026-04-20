@@ -20,8 +20,15 @@ function rate(num) {
 }
 
 function submitFeedback() {
+    let text = document.getElementById("fb").value;
+
     if (rating === 0) {
-        alert("Select rating!");
+        alert("Please select rating!");
+        return;
+    }
+
+    if (text.trim() === "") {
+        alert("Please write feedback!");
         return;
     }
 
@@ -29,4 +36,8 @@ function submitFeedback() {
         "Thanks for your feedback! ⭐ " + rating + "/5";
 
     document.getElementById("fb").value = "";
+    rating = 0;
+
+    let stars = document.querySelectorAll(".stars span");
+    stars.forEach(s => s.classList.remove("active"));
 }
