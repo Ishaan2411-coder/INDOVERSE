@@ -7,107 +7,65 @@
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- HERO -->
 <section class="hero">
     <h1>INDOVERSE</h1>
     <p>A Universe Beyond Imagination</p>
     <button class="btn" onclick="scrollToBooks()">Explore Books</button>
 </section>
 
-<!-- BOOKS -->
 <section class="section" id="books">
     <h2>Books</h2>
+
+    <!-- COUPON -->
+    <div class="coupon-box">
+        <input type="text" id="coupon" placeholder="Enter Coupon Code">
+        <button class="btn" onclick="applyCoupon()">Apply</button>
+        <p id="couponMsg"></p>
+    </div>
 
     <div class="books">
 
         <div class="card">
             <img src="SAHAY BOOK.png" class="cover">
             <h3>SAHAY</h3>
-            <p>First 3 Chapters Free</p>
             <div class="price">₹59</div>
-            <button class="btn">Buy Now</button>
+            <button class="btn buy">Buy Now</button>
         </div>
 
         <div class="card">
             <img src="INDOVAR BOOK.png" class="cover">
             <h3>INDOVAR</h3>
             <div class="price">₹99</div>
-            <button class="btn">Buy Now</button>
+            <button class="btn buy">Buy Now</button>
         </div>
 
         <div class="card">
             <img src="PARADOX BOOK.png" class="cover">
             <h3>PARADOX</h3>
             <div class="price">₹99</div>
-            <button class="btn">Buy Now</button>
+            <button class="btn buy">Buy Now</button>
         </div>
 
         <div class="card">
             <img src="FRACTURE BOOK.png" class="cover">
             <h3>FRACTURE</h3>
             <div class="price">₹99</div>
-            <button class="btn">Buy Now</button>
+            <button class="btn buy">Buy Now</button>
         </div>
 
         <div class="card">
             <img src="ASCENT BOOK.png" class="cover">
             <h3>ASCENT</h3>
             <div class="price">₹99</div>
-            <button class="btn">Buy Now</button>
+            <button class="btn buy">Buy Now</button>
         </div>
 
     </div>
-
-    <div class="offer">
-        🔥 INDOVERSE FULL SET <br>
-        <span class="old">₹499</span> → <span class="new">₹399</span>
-        <br><br>
-        <button class="btn">Unlock Full Set</button>
-    </div>
 </section>
-
-<!-- FEEDBACK -->
-<section class="section">
-    <h2>Feedback</h2>
-
-    <div class="stars">
-        <span onclick="rate(1)">★</span>
-        <span onclick="rate(2)">★</span>
-        <span onclick="rate(3)">★</span>
-        <span onclick="rate(4)">★</span>
-        <span onclick="rate(5)">★</span>
-    </div>
-
-    <textarea id="fb" placeholder="Write your feedback..."></textarea>
-    <button class="btn" onclick="submitFeedback()">Submit</button>
-
-    <p id="msg"></p>
-
-    <div class="icons">
-        <a href="https://www.youtube.com/@IshaanSingh-x9f"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.instagram.com/singhs_creations01/"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-</section>
-
-<!-- DISCLAIMER -->
-<section class="section">
-    <h2>Disclaimer</h2>
-    <p class="disclaimer">
-        All content under INDOVERSE is original intellectual property of Ishaan Kr. Singh.
-        Unauthorized reproduction is strictly prohibited.
-    </p>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    © 2026 INDOVERSE | All Rights Reserved <br>
-    ✍ Ishaan Kr. Singh
-</footer>
 
 <script src="script.js"></script>
 </body>
