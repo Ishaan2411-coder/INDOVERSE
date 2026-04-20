@@ -75,3 +75,18 @@ textarea {
     padding: 20px;
     opacity: 0.6;
 }
+.social {
+    margin-top: 20px;
+}
+
+.social i {
+    font-size: 28px;
+    margin: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social i:hover {
+    color: #00ffcc;
+    transform: scale(1.2);
+}
