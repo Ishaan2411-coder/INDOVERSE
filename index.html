@@ -11,12 +11,14 @@
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
     <h1>INDOVERSE</h1>
     <p>A Universe Beyond Imagination</p>
     <button class="btn" onclick="scrollToBooks()">Explore Books</button>
 </section>
 
+<!-- BOOKS -->
 <section class="section" id="books">
     <h2>Books</h2>
 
@@ -30,35 +32,35 @@
     <div class="books">
 
         <div class="card">
-            <img src="SAHAY BOOK.png" class="cover">
+            <img src="SAHAY BOOK.png">
             <h3>SAHAY</h3>
             <div class="price">₹59</div>
             <button class="btn buy">Buy Now</button>
         </div>
 
         <div class="card">
-            <img src="INDOVAR BOOK.png" class="cover">
+            <img src="INDOVAR BOOK.png">
             <h3>INDOVAR</h3>
             <div class="price">₹99</div>
             <button class="btn buy">Buy Now</button>
         </div>
 
         <div class="card">
-            <img src="PARADOX BOOK.png" class="cover">
+            <img src="PARADOX BOOK.png">
             <h3>PARADOX</h3>
             <div class="price">₹99</div>
             <button class="btn buy">Buy Now</button>
         </div>
 
         <div class="card">
-            <img src="FRACTURE BOOK.png" class="cover">
+            <img src="FRACTURE BOOK.png">
             <h3>FRACTURE</h3>
             <div class="price">₹99</div>
             <button class="btn buy">Buy Now</button>
         </div>
 
         <div class="card">
-            <img src="ASCENT BOOK.png" class="cover">
+            <img src="ASCENT BOOK.png">
             <h3>ASCENT</h3>
             <div class="price">₹99</div>
             <button class="btn buy">Buy Now</button>
@@ -66,6 +68,37 @@
 
     </div>
 </section>
+
+<!-- FEEDBACK -->
+<section class="section">
+    <h2>Feedback</h2>
+
+    <div class="stars">
+        <span onclick="rate(1)">★</span>
+        <span onclick="rate(2)">★</span>
+        <span onclick="rate(3)">★</span>
+        <span onclick="rate(4)">★</span>
+        <span onclick="rate(5)">★</span>
+    </div>
+
+    <textarea id="fb" placeholder="Write your feedback..."></textarea>
+    <button class="btn" onclick="submitFeedback()">Submit</button>
+
+    <p id="msg"></p>
+</section>
+
+<!-- DISCLAIMER -->
+<section class="section">
+    <h2>Disclaimer</h2>
+    <p>
+        All content under INDOVERSE is original intellectual property of Ishaan Kr. Singh.
+        Unauthorized use is prohibited.
+    </p>
+</section>
+
+<footer class="footer">
+    © 2026 INDOVERSE | Ishaan Kr. Singh
+</footer>
 
 <script src="script.js"></script>
 </body>
