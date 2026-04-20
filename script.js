@@ -4,40 +4,36 @@ function scrollToBooks() {
     });
 }
 
-let rating = 0;
+const COUPON = "INDO260410";
 
-function rate(num) {
-    rating = num;
-    let stars = document.querySelectorAll(".stars span");
+function applyCoupon() {
+    let input = document.getElementById("coupon").value;
 
-    stars.forEach((s, i) => {
-        if (i < num) {
-            s.classList.add("active");
-        } else {
-            s.classList.remove("active");
-        }
+    if (input === COUPON) {
+        localStorage.setItem("unlocked", "true");
+
+        document.getElementById("couponMsg").innerText =
+            "Access Granted 🎉";
+
+        unlockBooks();
+    } else {
+        document.getElementById("couponMsg").innerText =
+            "Invalid Code ❌";
+    }
+}
+
+function unlockBooks() {
+    let buttons = document.querySelectorAll(".buy");
+
+    buttons.forEach(btn => {
+        btn.innerText = "Read Now";
+        btn.style.background = "green";
     });
 }
 
-function submitFeedback() {
-    let text = document.getElementById("fb").value;
-
-    if (rating === 0) {
-        alert("Please select rating!");
-        return;
+// Load state
+window.onload = function () {
+    if (localStorage.getItem("unlocked") === "true") {
+        unlockBooks();
     }
-
-    if (text.trim() === "") {
-        alert("Please write feedback!");
-        return;
-    }
-
-    document.getElementById("msg").innerText =
-        "Thanks for your feedback! ⭐ " + rating + "/5";
-
-    document.getElementById("fb").value = "";
-    rating = 0;
-
-    let stars = document.querySelectorAll(".stars span");
-    stars.forEach(s => s.classList.remove("active"));
-}
+};
