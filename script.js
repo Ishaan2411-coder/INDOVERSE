@@ -4,7 +4,6 @@ function scrollToBooks() {
 
 // FEEDBACK
 let rating = 0;
-
 function rate(num) {
     rating = num;
     document.querySelectorAll(".stars span").forEach((s, i) => {
@@ -14,23 +13,11 @@ function rate(num) {
 
 function submitFeedback() {
     let text = document.getElementById("fb").value;
-
-    if (rating === 0) {
-        alert("Select rating!");
+    if (rating === 0 || text.trim() === "") {
+        alert("Complete feedback!");
         return;
     }
-
-    if (text.trim() === "") {
-        alert("Write feedback!");
-        return;
-    }
-
-    document.getElementById("msg").innerText =
-        "Thanks for your feedback! ⭐ " + rating + "/5";
-
-    document.getElementById("fb").value = "";
-    rating = 0;
-    document.querySelectorAll(".stars span").forEach(s => s.classList.remove("active"));
+    document.getElementById("msg").innerText = "Thanks! ⭐ " + rating + "/5";
 }
 
 // COUPON
@@ -41,18 +28,22 @@ function applyCoupon() {
 
     if (input === COUPON) {
         localStorage.setItem("unlocked", "true");
-        document.getElementById("couponMsg").innerText = "Access Granted 🎉";
-        unlockBooks();
+
+        document.getElementById("couponMsg").innerText = "Full Access Unlocked 🔥";
+
+        unlockAll();
     } else {
         document.getElementById("couponMsg").innerText = "Invalid Code ❌";
     }
 }
 
-function unlockBooks() {
+function unlockAll() {
     document.querySelectorAll(".buy").forEach(btn => {
         btn.innerText = "Read Now";
         btn.style.background = "green";
     });
+
+    document.getElementById("library").style.display = "block";
 }
 
 // OPEN BOOK
@@ -60,12 +51,13 @@ function openBook(file) {
     if (localStorage.getItem("unlocked") === "true") {
         window.open(file, "_blank");
     } else {
-        alert("Please buy or apply coupon first!");
+        alert("Unlock access first!");
     }
 }
 
+// LOAD STATE
 window.onload = () => {
     if (localStorage.getItem("unlocked") === "true") {
-        unlockBooks();
+        unlockAll();
     }
 };
