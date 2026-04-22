@@ -2,14 +2,12 @@ function scrollToBooks() {
     document.getElementById("books").scrollIntoView({ behavior: "smooth" });
 }
 
-// ⭐ FEEDBACK
+// FEEDBACK
 let rating = 0;
 
 function rate(num) {
     rating = num;
-    let stars = document.querySelectorAll(".stars span");
-
-    stars.forEach((s, i) => {
+    document.querySelectorAll(".stars span").forEach((s, i) => {
         s.classList.toggle("active", i < num);
     });
 }
@@ -32,11 +30,10 @@ function submitFeedback() {
 
     document.getElementById("fb").value = "";
     rating = 0;
-
     document.querySelectorAll(".stars span").forEach(s => s.classList.remove("active"));
 }
 
-// 🎟️ COUPON
+// COUPON
 const COUPON = "INDO260410";
 
 function applyCoupon() {
@@ -56,6 +53,15 @@ function unlockBooks() {
         btn.innerText = "Read Now";
         btn.style.background = "green";
     });
+}
+
+// OPEN BOOK
+function openBook(file) {
+    if (localStorage.getItem("unlocked") === "true") {
+        window.open(file, "_blank");
+    } else {
+        alert("Please buy or apply coupon first!");
+    }
 }
 
 window.onload = () => {
