@@ -9,9 +9,8 @@ function applyCoupon() {
     let input = document.getElementById("coupon").value;
 
     if (input === COUPON) {
-        localStorage.setItem("unlocked", "true");
-        document.getElementById("couponMsg").innerText = "Unlocked 🔥";
         unlockAll();
+        document.getElementById("couponMsg").innerText = "Unlocked 🔥";
     } else {
         document.getElementById("couponMsg").innerText = "Invalid ❌";
     }
