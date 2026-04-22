@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>INDOVERSE</title>
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -35,36 +35,32 @@
         <div class="card">
             <img src="SAHAY BOOK.png">
             <h3>SAHAY</h3>
-            <div class="price">₹59</div>
-            <button class="btn buy">Buy Now</button>
+            <button onclick="window.open('SAHAY.pdf')">Read Free</button>
+            <button class="btn buy" onclick="openBook('SAHAY.pdf')">Buy Now</button>
         </div>
 
         <div class="card">
             <img src="INDOVAR BOOK.png">
             <h3>INDOVAR</h3>
-            <div class="price">₹99</div>
-            <button class="btn buy">Buy Now</button>
+            <button class="btn buy" onclick="openBook('INDOVAR.pdf')">Buy Now</button>
         </div>
 
         <div class="card">
             <img src="PARADOX BOOK.png">
             <h3>PARADOX</h3>
-            <div class="price">₹99</div>
-            <button class="btn buy">Buy Now</button>
+            <button class="btn buy" onclick="openBook('PARADOX.pdf')">Buy Now</button>
         </div>
 
         <div class="card">
             <img src="FRACTURE BOOK.png">
             <h3>FRACTURE</h3>
-            <div class="price">₹99</div>
-            <button class="btn buy">Buy Now</button>
+            <button class="btn buy" onclick="openBook('FRACTURE.pdf')">Buy Now</button>
         </div>
 
         <div class="card">
             <img src="ASCENT BOOK.png">
             <h3>ASCENT</h3>
-            <div class="price">₹99</div>
-            <button class="btn buy">Buy Now</button>
+            <button class="btn buy" onclick="openBook('ASCENT.pdf')">Buy Now</button>
         </div>
 
     </div>
@@ -86,15 +82,18 @@
     <button class="btn" onclick="submitFeedback()">Submit</button>
 
     <p id="msg"></p>
-</section>
+
+    <!-- SOCIAL -->
     <div class="social">
-    <a href="https://www.youtube.com/@IshaanSingh-x9f" target="_blank">
-        <i class="fa-brands fa-youtube"></i>
-    </a>
-    <a href="https://www.instagram.com/singhs_creations01/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
+        <a href="https://www.youtube.com/@IshaanSingh-x9f" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/singhs_creations01/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
     </div>
+
+</section>
 
 <!-- DISCLAIMER -->
 <section class="section">
