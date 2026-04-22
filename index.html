@@ -12,10 +12,11 @@
 
 <body>
 
+<!-- HOME -->
 <section class="hero">
     <h1>INDOVERSE</h1>
     <p>A Universe Beyond Imagination</p>
-    <button class="btn" onclick="scrollToBooks()">Explore Books</button>
+    <button class="btn" onclick="scrollToBooks()">Explore</button>
 </section>
 
 <!-- BOOKS -->
@@ -24,9 +25,16 @@
 
     <!-- COUPON -->
     <div class="coupon-box">
-        <input type="text" id="coupon" placeholder="Enter Coupon Code">
+        <input type="text" id="coupon" placeholder="Enter Coupon">
         <button class="btn" onclick="applyCoupon()">Apply</button>
         <p id="couponMsg"></p>
+    </div>
+
+    <!-- WHOLE SET -->
+    <div class="fullset">
+        <h3>Unlock Full Set</h3>
+        <p>₹399</p>
+        <button class="btn" onclick="unlockAll()">Buy Full Access</button>
     </div>
 
     <div class="books">
@@ -69,14 +77,22 @@
     <h2>Your Buys</h2>
 
     <div class="books">
-
         <div class="card"><h3>SAHAY</h3><button onclick="openBook('SAHAY.pdf')">Read</button></div>
         <div class="card"><h3>INDOVAR</h3><button onclick="openBook('INDOVAR.pdf')">Read</button></div>
         <div class="card"><h3>PARADOX</h3><button onclick="openBook('PARADOX.pdf')">Read</button></div>
         <div class="card"><h3>FRACTURE</h3><button onclick="openBook('FRACTURE.pdf')">Read</button></div>
         <div class="card"><h3>ASCENT</h3><button onclick="openBook('ASCENT.pdf')">Read</button></div>
-
     </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>About</h2>
+    <p>
+        These books are crafted for teenagers to adults, written in Hinglish to create a natural and relatable reading experience. 
+        INDOVERSE is not just a collection of stories, but a universe where imagination, reality, and deep concepts collide. 
+        Each book explores unique themes designed to engage, inspire, and challenge the reader’s perspective.
+    </p>
 </section>
 
 <!-- FEEDBACK -->
@@ -97,20 +113,16 @@
     <p id="msg"></p>
 
     <div class="social">
-        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
     </div>
 </section>
 
-<!-- DISCLAIMER -->
+<!-- COPYRIGHT -->
 <section class="section">
-    <h2>Disclaimer</h2>
-    <p>All content under INDOVERSE is original property of Ishaan Kr. Singh.</p>
+    <h2>Copyright</h2>
+    <p>© 2026 INDOVERSE | All rights reserved | Ishaan Kr. Singh</p>
 </section>
-
-<footer class="footer">
-    © 2026 INDOVERSE
-</footer>
 
 <script src="script.js"></script>
 </body>
