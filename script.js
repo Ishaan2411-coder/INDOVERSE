@@ -58,36 +58,44 @@ window.onload = () => {
     }
 };
 const lines = [
-    "SAHAY — A Normal Child → Cyber God",
-    "INDOVAR — Cyber God → Earth Protector",
-    "PARADOX — Earth Protector → Genius of Time",
-    "FRACTURE — Genius of Time → Multiverse Killer",
-    "ASCENT — Multiverse Killer → Cristosapien"
+    { text: "SAHAY — A Normal Child → Cyber God", color: "#00ff88" },
+    { text: "INDOVAR — Cyber God → Earth Protector", color: "#007bff" },
+    { text: "PARADOX — Earth Protector → Genius of Time", color: "#ff8800" },
+    { text: "FRACTURE — Genius of Time → Multiverse Killer", color: "#ff0033" },
+    { text: "ASCENT — Multiverse Killer → Cristosapien", color: "#a020f0" }
 ];
 
 let index = 0;
-
-const intro = document.getElementById("intro");
 const text = document.getElementById("introText");
+const intro = document.getElementById("intro");
 
 function showLines() {
     if (index < lines.length) {
-        text.innerText = lines[index];
-        text.style.opacity = "1";
+        text.style.opacity = "0";
 
         setTimeout(() => {
-            text.style.opacity = "0";
+            text.innerText = lines[index].text;
+            text.style.color = lines[index].color;
+            text.style.opacity = "1";
             index++;
-            setTimeout(showLines, 500);
-        }, 2000);
+        }, 400);
+
+        setTimeout(showLines, 2600);
     } else {
-        intro.style.opacity = "0";
         setTimeout(() => {
-            intro.style.display = "none";
-        }, 1000);
+            text.innerText = "ENTER THE INDOVERSE";
+            text.style.color = "gold";
+            text.style.fontSize = "2.5rem";
+            text.style.opacity = "1";
+        }, 500);
+
+        setTimeout(() => {
+            intro.style.opacity = "0";
+            setTimeout(() => intro.style.display = "none", 1000);
+        }, 3000);
     }
 }
 
 window.onload = () => {
-    setTimeout(showLines, 1000);
+    setTimeout(showLines, 800);
 };
