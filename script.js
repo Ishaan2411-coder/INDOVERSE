@@ -57,3 +57,37 @@ window.onload = () => {
         unlockAll();
     }
 };
+const lines = [
+    "SAHAY — A Normal Child → Cyber God",
+    "INDOVAR — Cyber God → Earth Protector",
+    "PARADOX — Earth Protector → Genius of Time",
+    "FRACTURE — Genius of Time → Multiverse Killer",
+    "ASCENT — Multiverse Killer → Cristosapien"
+];
+
+let index = 0;
+
+const intro = document.getElementById("intro");
+const text = document.getElementById("introText");
+
+function showLines() {
+    if (index < lines.length) {
+        text.innerText = lines[index];
+        text.style.opacity = "1";
+
+        setTimeout(() => {
+            text.style.opacity = "0";
+            index++;
+            setTimeout(showLines, 500);
+        }, 2000);
+    } else {
+        intro.style.opacity = "0";
+        setTimeout(() => {
+            intro.style.display = "none";
+        }, 1000);
+    }
+}
+
+window.onload = () => {
+    setTimeout(showLines, 1000);
+};
