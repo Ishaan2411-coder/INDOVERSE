@@ -326,3 +326,22 @@ p:hover .email {
 .section {
     text-align: center;
 }
+/* MOBILE FIX */
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        text-align: center;
+    }
+
+}
