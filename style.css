@@ -218,3 +218,8 @@ html {
         font-size: 2.3rem;
     }
 }
+.btn.sahay { background: #00ff88; }
+.btn.indovar { background: #007bff; color: white; }
+.btn.paradox { background: #ff8800; }
+.btn.fracture { background: red; color: white; }
+.btn.ascent { background: purple; color: white; }
