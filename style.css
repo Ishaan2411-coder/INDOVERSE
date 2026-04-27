@@ -313,3 +313,16 @@ p:hover .email {
 .icon-btn.email:hover {
     box-shadow: 0 0 20px #00c6ff;
 }
+/* PERFECT CENTER FIX */
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+/* ensure parent section center */
+.section {
+    text-align: center;
+}
