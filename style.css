@@ -218,3 +218,65 @@ html {
         font-size: 2.3rem;
     }
 }
+/* CONTACT BOX */
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* CONTACT ITEM */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* ICON SIZE */
+.contact-item i {
+    font-size: 20px;
+}
+
+/* HOVER EFFECT */
+.contact-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px gold;
+}
+/* READ NOW BUTTON COLORS */
+
+/* SAHAY */
+.btn.sahay {
+    background: linear-gradient(90deg, #00ff88, #00cc66);
+    color: black;
+}
+
+/* INDOVAR */
+.btn.indovar {
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    color: white;
+}
+
+/* PARADOX */
+.btn.paradox {
+    background: linear-gradient(90deg, #ff8800, #ff5e00);
+    color: black;
+}
+
+/* FRACTURE */
+.btn.fracture {
+    background: linear-gradient(90deg, #ff0033, #b30024);
+    color: white;
+}
+
+/* ASCENT */
+.btn.ascent {
+    background: linear-gradient(90deg, #a020f0, #6a00f4);
+    color: white;
+}
