@@ -2,67 +2,17 @@ function scrollToBooks() {
     document.getElementById("books").scrollIntoView({ behavior: "smooth" });
 }
 
-// COUPON
-const COUPON = "INDO260410";
-
-function applyCoupon() {
-    let input = document.getElementById("coupon").value;
-
-    if (input === COUPON) {
-        unlockAll();
-        document.getElementById("couponMsg").innerText = "Unlocked 🔥";
-    } else {
-        document.getElementById("couponMsg").innerText = "Invalid ❌";
-    }
-}
-
-// UNLOCK
-function unlockAll() {
-    localStorage.setItem("unlocked", "true");
-
-    document.querySelectorAll(".buy").forEach(btn => {
-        btn.innerText = "Read Now";
-        btn.style.background = "green";
-    });
-
-    document.getElementById("library").style.display = "block";
-}
-
-// OPEN BOOK
 function openBook(file) {
-    if (localStorage.getItem("unlocked") === "true") {
-        window.open(file, "_blank");
-    } else {
-        alert("Buy or unlock full set!");
-    }
+    window.open(file, "_blank");
 }
 
-// FEEDBACK
-let rating = 0;
-function rate(n) {
-    rating = n;
-    document.querySelectorAll(".stars span").forEach((s, i) => {
-        s.classList.toggle("active", i < n);
-    });
-}
-
-function submitFeedback() {
-    if (rating === 0) return alert("Rate first!");
-    document.getElementById("msg").innerText = "Thanks ⭐ " + rating + "/5";
-}
-
-// LOAD
-window.onload = () => {
-    if (localStorage.getItem("unlocked") === "true") {
-        unlockAll();
-    }
-};
+/* INTRO */
 const lines = [
-    { text: "SAHAY — A Normal Child → Cyber God", color: "#00ff88" },
-    { text: "INDOVAR — Cyber God → Earth Protector", color: "#007bff" },
-    { text: "PARADOX — Earth Protector → Genius of Time", color: "#ff8800" },
-    { text: "FRACTURE — Genius of Time → Multiverse Killer", color: "#ff0033" },
-    { text: "ASCENT — Multiverse Killer → Cristosapien", color: "#a020f0" }
+    { text: "A Normal Child → Cyber God", color: "#00ff88" },
+    { text: "Cyber God → Earth Protector", color: "#007bff" },
+    { text: "Earth Protector → Genius of Time", color: "#ff8800" },
+    { text: "Genius of Time → Multiverse Killer", color: "#ff0033" },
+    { text: "Multiverse Killer → Cristosapien", color: "#a020f0" }
 ];
 
 let index = 0;
@@ -80,19 +30,11 @@ function showLines() {
             index++;
         }, 400);
 
-        setTimeout(showLines, 2600);
+        setTimeout(showLines, 2500);
     } else {
         setTimeout(() => {
-            text.innerText = "ENTER THE INDOVERSE";
-            text.style.color = "gold";
-            text.style.fontSize = "2.5rem";
-            text.style.opacity = "1";
-        }, 500);
-
-        setTimeout(() => {
-            intro.style.opacity = "0";
-            setTimeout(() => intro.style.display = "none", 1000);
-        }, 3000);
+            intro.style.display = "none";
+        }, 1500);
     }
 }
 
