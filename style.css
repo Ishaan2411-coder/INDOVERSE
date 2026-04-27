@@ -269,3 +269,47 @@ p:hover .instagram {
 p:hover .email {
     text-shadow: 0 0 10px #00c6ff;
 }
+/* CONTACT CENTER */
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* ICON BUTTON */
+.icon-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+/* INSTAGRAM */
+.icon-btn.instagram {
+    color: #E1306C;
+}
+
+/* EMAIL */
+.icon-btn.email {
+    color: #00c6ff;
+}
+
+/* HOVER EFFECT */
+.icon-btn:hover {
+    transform: scale(1.15);
+}
+
+/* GLOW */
+.icon-btn.instagram:hover {
+    box-shadow: 0 0 20px #E1306C;
+}
+
+.icon-btn.email:hover {
+    box-shadow: 0 0 20px #00c6ff;
+}
