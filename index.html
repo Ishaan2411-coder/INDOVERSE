@@ -7,139 +7,95 @@
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
-<!-- HOME -->
+<!-- INTRO -->
 <div id="intro">
+    <h1 id="introText"></h1>
+</div>
 
-    <h1 id="introText">INDOVERSE</h1>
-
-</div>    
+<!-- HERO -->
 <section class="hero">
-    <h1>INDOVERSE</h1>
-    <p>A Universe Beyond Imagination</p>
-    <button class="btn" onclick="scrollToBooks()">Explore</button>
+    <h1>WELCOME TO INDOVERSE</h1>
+    <p>Enter the Universe</p>
+    <button class="btn" onclick="scrollToBooks()">Explore Books</button>
 </section>
 
 <!-- BOOKS -->
 <section class="section" id="books">
-    <h2>Books</h2>
-
-    <!-- FULL SET -->
-    <div class="fullset">
-        <h3>Unlock Full Set</h3>
-        <p>₹399</p>
-        <button class="btn" onclick="unlockAll()">Buy Full Access</button>
-    </div>
+    <h2>Explore Books</h2>
 
     <div class="books">
 
         <div class="card">
             <img src="SAHAY BOOK.png">
-            <h3>SAHAY</h3>
-            <p>₹59</p>
-            <button class="btn buy" onclick="openBook('SAHAY.pdf')">Buy Now</button>
+            <button class="btn sahay" onclick="openBook('SAHAY.pdf')">Read Now</button>
         </div>
 
         <div class="card">
             <img src="INDOVAR BOOK.png">
-            <h3>INDOVAR</h3>
-            <p>₹99</p>
-            <button class="btn buy" onclick="openBook('INDOVAR.pdf')">Buy Now</button>
+            <button class="btn indovar" onclick="openBook('INDOVAR.pdf')">Read Now</button>
         </div>
 
         <div class="card">
             <img src="PARADOX BOOK.png">
-            <h3>PARADOX</h3>
-            <p>₹99</p>
-            <button class="btn buy" onclick="openBook('PARADOX.pdf')">Buy Now</button>
+            <button class="btn paradox" onclick="openBook('PARADOX.pdf')">Read Now</button>
         </div>
 
         <div class="card">
             <img src="FRACTURE BOOK.png">
-            <h3>FRACTURE</h3>
-            <p>₹99</p>
-            <button class="btn buy" onclick="openBook('FRACTURE.pdf')">Buy Now</button>
+            <button class="btn fracture" onclick="openBook('FRACTURE.pdf')">Read Now</button>
         </div>
 
         <div class="card">
             <img src="ASCENT BOOK.png">
-            <h3>ASCENT</h3>
-            <p>₹99</p>
-            <button class="btn buy" onclick="openBook('ASCENT.pdf')">Buy Now</button>
+            <button class="btn ascent" onclick="openBook('ASCENT.pdf')">Read Now</button>
         </div>
 
     </div>
-
-    <!-- COUPON (BOTTOM) -->
-    <div class="coupon-box">
-        <input type="text" id="coupon" placeholder="Enter Coupon">
-        <button class="btn" onclick="applyCoupon()">Apply</button>
-        <p id="couponMsg"></p>
-    </div>
-
 </section>
 
-<!-- YOUR BUYS -->
-<section class="section" id="library" style="display:none;">
-    <h2>Your Buys</h2>
+<!-- FEEDBACK -->
+<section class="section">
+    <h2>Your Feedback Matters</h2>
+    <p>Your feedback will decide future of INDOVERSE. Please give honest review 🙏</p>
 
-    <div class="books">
-        <div class="card"><h3>SAHAY</h3><button onclick="openBook('SAHAY.pdf')">Read</button></div>
-        <div class="card"><h3>INDOVAR</h3><button onclick="openBook('INDOVAR.pdf')">Read</button></div>
-        <div class="card"><h3>PARADOX</h3><button onclick="openBook('PARADOX.pdf')">Read</button></div>
-        <div class="card"><h3>FRACTURE</h3><button onclick="openBook('FRACTURE.pdf')">Read</button></div>
-        <div class="card"><h3>ASCENT</h3><button onclick="openBook('ASCENT.pdf')">Read</button></div>
-    </div>
+    <button class="btn" onclick="window.open('https://forms.gle/aZQMVWzbUSs7EwcQA')">
+        ⭐ Give Honest Feedback
+    </button>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+    <h2>Contact Us</h2>
+
+    <p>
+        Instagram: <a href="https://www.instagram.com/ishaanks09/" target="_blank">Click Here</a>
+    </p>
+
+    <p>
+        Email: singhscreations2026@gmail.com
+    </p>
 </section>
 
 <!-- ABOUT -->
 <section class="section">
     <h2>About</h2>
     <p>
-        These books are designed for teenagers to adults and written in Hinglish for a natural and relatable experience. 
-        INDOVERSE is a universe of stories where imagination meets deep concepts, emotions, and reality. 
-        Every book explores a different theme to engage and challenge the reader.
+        These stories are written for teenagers to adults in Hinglish language to create a deeper connection with the Indian audience.  
+        INDOVERSE is not just a collection of stories, it is a journey of evolution, power, and transformation.
     </p>
-</section>
-
-<!-- FEEDBACK -->
-<section class="section">
-    <h2>Feedback</h2>
-
-    <div class="stars">
-        <span onclick="rate(1)">★</span>
-        <span onclick="rate(2)">★</span>
-        <span onclick="rate(3)">★</span>
-        <span onclick="rate(4)">★</span>
-        <span onclick="rate(5)">★</span>
-    </div>
-
-    <textarea id="fb" placeholder="Write your feedback..."></textarea>
-    <button class="btn" onclick="submitFeedback()">Submit</button>
-
-    <p id="msg"></p>
-
-<div class="social">
-    <a href="https://www.youtube.com/@IshaanSingh-x9f" target="_blank">
-        <i class="fa-brands fa-youtube"></i>
-    </a>
-
-    <a href="https://www.instagram.com/ishaanks09/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-</div>
 </section>
 
 <!-- COPYRIGHT -->
 <section class="section">
-    <h2>Copyright</h2>
-    <p>© 2026 INDOVERSE | All rights reserved | Ishaan Kr. Singh</p>
+    <p>© ISHAAN KR. SINGH</p>
 </section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
