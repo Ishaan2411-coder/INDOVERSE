@@ -245,3 +245,27 @@ html {
     </a>
 
 </div>
+.icon {
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Instagram */
+.icon.instagram {
+    color: #E1306C;
+}
+
+/* Email */
+.icon.email {
+    color: #00c6ff;
+}
+
+/* Hover glow */
+p:hover .instagram {
+    text-shadow: 0 0 10px #E1306C;
+}
+
+p:hover .email {
+    text-shadow: 0 0 10px #00c6ff;
+}
