@@ -223,3 +223,14 @@ html {
 .btn.paradox { background: #ff8800; }
 .btn.fracture { background: red; color: white; }
 .btn.ascent { background: purple; color: white; }
+<div class="contact-box">
+
+    <a href="https://www.instagram.com/ishaanks09/" target="_blank">
+        <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+
+    <a href="mailto:singhscreations2026@gmail.com">
+        <i class="fa-solid fa-envelope"></i> Email
+    </a>
+
+</div>
