@@ -178,3 +178,23 @@ body {
 }
     opacity: 0.5;
 }
+/* DESKTOP (default) */
+.phase-label {
+    text-align: center;
+    color: gold;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255,215,0,0.7);
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+    .phase-label {
+        font-size: 14px;        /* chhota kar diya */
+        letter-spacing: 1.5px;  /* kam spacing */
+        margin: 12px 0;
+    }
+}
