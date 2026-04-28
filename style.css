@@ -119,3 +119,43 @@ body {
 .icon-btn.email:hover {
     box-shadow: 0 0 20px #00c6ff;
 }
+/* ACCORDION PREMIUM */
+.accordion {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.acc-item {
+    margin-bottom: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+.acc-btn {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    border: none;
+    color: gold;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.acc-btn:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.acc-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 14px;
+    color: #ccc;
+    transition: max-height 0.4s ease;
+}
+
+.acc-content p {
+    margin: 12px 0;
+}
