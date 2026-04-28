@@ -81,3 +81,41 @@ body {
     font-size: 2rem;
     text-align: center;
 }
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icon-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+/* COLORS */
+.icon-btn.instagram {
+    color: #E1306C;
+}
+
+.icon-btn.email {
+    color: #00c6ff;
+}
+
+/* HOVER */
+.icon-btn:hover {
+    transform: scale(1.15);
+}
+
+.icon-btn.instagram:hover {
+    box-shadow: 0 0 20px #E1306C;
+}
+
+.icon-btn.email:hover {
+    box-shadow: 0 0 20px #00c6ff;
+}
