@@ -188,7 +188,24 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(255,215,0,0.7);
+    /* HERO TEXT FIX */
+.hero h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.2;
 }
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.8rem;   /* thoda chhota */
+        padding: 0 15px;     /* side gap */
+        word-break: break-word;
+    }
+}
+}
+
 
 /* MOBILE FIX */
 @media (max-width: 600px) {
