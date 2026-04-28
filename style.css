@@ -159,3 +159,15 @@ body {
 .acc-content p {
     margin: 12px 0;
 }
+/* PHASE SYSTEM */
+.phase-label {
+    text-align: center;
+    color: gold;
+    margin: 15px 0;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.phase-label.upcoming {
+    opacity: 0.5;
+}
