@@ -41,3 +41,17 @@ function showLines() {
 window.onload = () => {
     setTimeout(showLines, 800);
 };
+document.querySelectorAll(".acc-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        let content = btn.nextElementSibling;
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            document.querySelectorAll(".acc-content").forEach(c => c.style.maxHeight = null);
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+
+    });
+});
