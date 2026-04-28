@@ -1,284 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #050505;
+    margin: 0;
+    background: black;
     color: white;
+    font-family: Arial;
 }
 
 /* HERO */
 .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
 }
-
 .hero h1 {
     font-size: 3rem;
-    color: gold;
+}
+
+/* SECTION */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* BOOKS */
+.books {
+    display: grid;
+    gap: 20px;
 }
 
 /* BUTTON */
 .btn {
-    padding: 12px 25px;
-    border-radius: 30px;
+    padding: 10px 20px;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
-    font-weight: bold;
-}
-
-/* SECTIONS */
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* GRID */
-.books {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-/* CARD */
-.card {
-    background: rgba(255,255,255,0.05);
-    padding: 15px;
-    border-radius: 15px;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
 }
 
 /* COLORS */
-.sahay { background: #00ff88; }
-.indovar { background: #007bff; color: white; }
-.paradox { background: #ff8800; }
-.fracture { background: red; }
-.ascent { background: purple; }
+.sahay {background:#00ff88;}
+.indovar {background:#007bff;color:white;}
+.paradox {background:#ff8800;}
+.fracture {background:red;color:white;}
+.ascent {background:purple;color:white;}
 
-/* INTRO */
-#intro {
-    position: fixed;
+/* PHASE */
+.phase-label {
+    color: gold;
+    margin: 10px;
+}
+.upcoming {opacity:0.5;}
+
+/* ACCORDION */
+.acc-btn {
     width: 100%;
-    height: 100%;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    color: gold;
+    cursor: pointer;
 }
-
-#introText {
-    font-size: 2rem;
-    text-align: center;
-}
-/* ===============================
-   PREMIUM UI UPGRADE
-================================ */
-
-/* GOLD VARIABLES */
-:root {
-    --gold: #d4af37;
-}
-
-/* BODY DEPTH */
-body {
-    background:
-        radial-gradient(circle at 20% 20%, rgba(212,175,55,0.08), transparent),
-        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05), transparent),
-        #050505;
-}
-
-/* HERO IMPROVE */
-.hero h1 {
-    font-size: 3.5rem;
-    letter-spacing: 3px;
-    text-shadow:
-        0 0 15px rgba(212,175,55,0.5),
-        0 0 30px rgba(212,175,55,0.2);
-}
-
-.hero p {
-    color: #bbb;
-}
-
-/* BUTTON PREMIUM */
-.btn {
-    background: linear-gradient(90deg, var(--gold), #ffd700);
-    color: black;
-    font-weight: bold;
-    transition: 0.3s;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn:hover {
-    transform: scale(1.07);
-    box-shadow: 0 0 20px var(--gold);
-}
-
-/* SHINE EFFECT */
-.btn::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -120%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-}
-
-.btn:hover::after {
-    animation: shine 0.8s;
-}
-
-@keyframes shine {
-    to { left: 120%; }
-}
-
-/* CARD GLASS */
-.card {
-    background: rgba(255,255,255,0.04);
-    backdrop-filter: blur(12px);
-    border-radius: 18px;
-    padding: 15px;
-    transition: 0.4s;
-    position: relative;
-}
-
-/* CARD HOVER */
-.card:hover {
-    transform: translateY(-12px) scale(1.02);
-}
-
-/* IMAGE ZOOM */
-.card img {
-    transition: 0.4s;
-}
-.card:hover img {
-    transform: scale(1.05);
-}
-
-/* GLOW BORDER EFFECT */
-.card:nth-child(1) { box-shadow: 0 0 20px rgba(0,255,136,0.2); }
-.card:nth-child(2) { box-shadow: 0 0 20px rgba(0,123,255,0.2); }
-.card:nth-child(3) { box-shadow: 0 0 20px rgba(255,136,0,0.2); }
-.card:nth-child(4) { box-shadow: 0 0 20px rgba(255,0,51,0.2); }
-.card:nth-child(5) { box-shadow: 0 0 20px rgba(160,32,240,0.2); }
-
-/* SECTION HEADINGS */
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: var(--gold);
-}
-
-/* FEEDBACK TEXT */
-.section p {
+.acc-content {
+    display: none;
+    padding: 10px;
     color: #ccc;
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 20px;
 }
 
-/* CONTACT LINKS */
-a {
-    color: var(--gold);
-    text-decoration: none;
-}
-
-a:hover {
-    text-shadow: 0 0 10px var(--gold);
-}
-
-/* INTRO TEXT GLOW */
-#introText {
-    font-size: 2.2rem;
-    letter-spacing: 2px;
-    text-shadow: 0 0 20px currentColor;
-}
-
-/* SMOOTH SCROLL */
-html {
-    scroll-behavior: smooth;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 2.3rem;
-    }
-}
-.btn.sahay { background: #00ff88; }
-.btn.indovar { background: #007bff; color: white; }
-.btn.paradox { background: #ff8800; }
-.btn.fracture { background: red; color: white; }
-.btn.ascent { background: purple; color: white; }
-<div class="contact-box">
-
-    <a href="https://www.instagram.com/ishaanks09/" target="_blank">
-        <i class="fa-brands fa-instagram"></i> Instagram
-    </a>
-
-    <a href="mailto:singhscreations2026@gmail.com">
-        <i class="fa-solid fa-envelope"></i> Email
-    </a>
-
-</div>
-<div class="contact-box">
-
-    <a href="https://www.instagram.com/ishaanks09/" target="_blank">
-        <i class="fa-brands fa-instagram"></i> Instagram
-    </a>
-
-    <a href="mailto:singhscreations2026@gmail.com">
-        <i class="fa-solid fa-envelope"></i> Email
-    </a>
-
-</div>
-.icon {
-    margin-right: 8px;
-    display: inline-flex;
-    align-items: center;
-}
-
-/* Instagram */
-.icon.instagram {
-    color: #E1306C;
-}
-
-/* Email */
-.icon.email {
-    color: #00c6ff;
-}
-
-/* Hover glow */
-p:hover .instagram {
-    text-shadow: 0 0 10px #E1306C;
-}
-
-p:hover .email {
-    text-shadow: 0 0 10px #00c6ff;
-}
-/* CONTACT CENTER */
+/* CONTACT */
 .contact-box {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 30px;
-    margin-top: 20px;
 }
 
-/* ICON BUTTON */
 .icon-btn {
     width: 60px;
     height: 60px;
@@ -286,62 +77,12 @@ p:hover .email {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255,255,255,0.05);
-    transition: 0.3s;
 }
 
-/* INSTAGRAM */
-.icon-btn.instagram {
-    color: #E1306C;
-}
+.instagram {color:#E1306C;}
+.email {color:#00c6ff;}
 
-/* EMAIL */
-.icon-btn.email {
-    color: #00c6ff;
-}
-
-/* HOVER EFFECT */
-.icon-btn:hover {
-    transform: scale(1.15);
-}
-
-/* GLOW */
-.icon-btn.instagram:hover {
-    box-shadow: 0 0 20px #E1306C;
-}
-
-.icon-btn.email:hover {
-    box-shadow: 0 0 20px #00c6ff;
-}
-/* PERFECT CENTER FIX */
-.contact-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-}
-
-/* ensure parent section center */
-.section {
-    text-align: center;
-}
-/* MOBILE FIX */
-@media (max-width: 600px) {
-
-    .hero {
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-        text-align: center;
-        line-height: 1.3;
-    }
-
-    .hero p {
-        text-align: center;
-    }
-
+/* MOBILE */
+@media(max-width:600px){
+.hero h1 {font-size:2rem;}
 }
