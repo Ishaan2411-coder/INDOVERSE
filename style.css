@@ -160,14 +160,21 @@ body {
     margin: 12px 0;
 }
 /* PHASE SYSTEM */
+/* PHASE SYSTEM UPGRADE */
 .phase-label {
     text-align: center;
     color: gold;
-    margin: 15px 0;
-    font-size: 13px;
-    letter-spacing: 2px;
+    margin: 20px 0;
+    font-size: 18px;              /* bigger */
+    font-weight: 700;             /* bold */
+    letter-spacing: 3px;          /* spacing */
+    text-transform: uppercase;    /* strong look */
+    text-shadow: 0 0 10px rgba(255,215,0,0.7); /* glow */
 }
 
 .phase-label.upcoming {
+    opacity: 0.6;
+    font-size: 16px;
+}
     opacity: 0.5;
 }
