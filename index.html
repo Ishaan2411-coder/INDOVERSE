@@ -1,5 +1,148 @@
-<div class="update-screen">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>INDOVERSE</title>
+
+<style>
+
+/* FULL RESET */
+
+html, body{
+    margin:0;
+    padding:0;
+
+    width:100%;
+    height:100%;
+
+    background:#050505;
+
+    overflow:hidden;
+
+    font-family:Arial, sans-serif;
+}
+
+/* SCREEN */
+
+.loader-screen{
+    width:100vw;
+    height:100vh;
+
+    background:#050505;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    box-sizing:border-box;
+}
+
+/* TRIANGLE */
+
+.triangle{
+    width:0;
+    height:0;
+
+    border-left:18px solid transparent;
+    border-right:18px solid transparent;
+    border-bottom:32px solid #666;
+
+    margin-bottom:30px;
+
+    animation:glow 2s infinite ease-in-out;
+}
+
+/* ANIMATION */
+
+@keyframes glow{
+
+0%{
+    opacity:0.4;
+    transform:translateY(0px);
+}
+
+50%{
+    opacity:1;
+    transform:translateY(-5px);
+}
+
+100%{
+    opacity:0.4;
+    transform:translateY(0px);
+}
+
+}
+
+/* TITLE */
+
+.loader-screen h1{
+    color:#b0b0b0;
+
+    font-size:3.5rem;
+    font-weight:600;
+
+    letter-spacing:10px;
+
+    margin-bottom:15px;
+
+    text-align:center;
+}
+
+/* TEXT */
+
+.loader-screen p{
+    color:#666;
+
+    font-size:1rem;
+
+    letter-spacing:2px;
+
+    text-align:center;
+}
+
+/* MOBILE FIX */
+
+@media(max-width:700px){
+
+.loader-screen h1{
+    font-size:2rem;
+    letter-spacing:4px;
+}
+
+.loader-screen p{
+    font-size:0.9rem;
+    padding:0 10px;
+}
+
+.triangle{
+    transform:scale(0.8);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="loader-screen">
+
+    <div class="triangle"></div>
+
     <h1>INDOVERSE</h1>
+
     <p>Rebuilding the universe...</p>
-    <span>New experience arriving in a few days.</span>
+
 </div>
+
+</body>
+</html>
