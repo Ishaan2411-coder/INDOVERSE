@@ -98,6 +98,8 @@ PHASE 1
 
 <section class="phase2">
 
+<div class="phase2-badge">COMING SOON</div>
+
 <h2>
 PHASE 2
 </h2>
@@ -106,109 +108,95 @@ PHASE 2
 The universe expands further...
 </p>
 
-</section>
-
-<!-- ARCHIVES -->
-
-<section class="archives">
-
-<h1 class="section-title">
-ARCHIVES
-</h1>
-
-<!-- CHARACTERS -->
-
-<div class="accordion">
-
-<button class="accordion-btn">
-
-<span>CHARACTERS</span>
-
-<span class="arrow">⌄</span>
-
-</button>
-
-<div class="accordion-content">
-
-<div class="mini-card green">BHUVAN</div>
-<div class="mini-card blue">MIKHAIL</div>
-<div class="mini-card orange">KENJI</div>
-<div class="mini-card red">AVIKA</div>
-<div class="mini-card purple">ISHAAN</div>
-
-</div>
-
-</div>
-
-<!-- PLACES -->
-
-<div class="accordion">
-
-<button class="accordion-btn">
-
-<span>PLACES</span>
-
-<span class="arrow">⌄</span>
-
-</button>
-
-<div class="accordion-content">
-
-<div class="mini-card blue">INDOVAR</div>
-<div class="mini-card gold">NEBULA</div>
-<div class="mini-card orange">VOID</div>
-<div class="mini-card red">DIMENSIONAL NEXUS</div>
-<div class="mini-card purple">SINGULARITY SPHERE</div>
-
-</div>
-
-</div>
-
-<!-- THINGS -->
-
-<div class="accordion">
-
-<button class="accordion-btn">
-
-<span>THINGS</span>
-
-<span class="arrow">⌄</span>
-
-</button>
-
-<div class="accordion-content">
-
-<div class="mini-card green">SAHAY</div>
-<div class="mini-card blue">ASTRA RING</div>
-<div class="mini-card orange">VIMAAN 1</div>
-<div class="mini-card red">WAQT RATH</div>
-<div class="mini-card purple">BUBBLE WORLD</div>
-
-</div>
-
-</div>
+<div class="phase2-line"></div>
 
 </section>
 
 <!-- FEEDBACK -->
 
-<section class="feedback">
+<section class="feedback" id="feedback">
 
-<h2>
-FEEDBACK
-</h2>
+<h2>FEEDBACK</h2>
 
-<p>
-Enter the archives. Leave your thoughts.
-</p>
+<p>Leave your thoughts. Rate the universe.</p>
 
-<a href="https://forms.gle/96thjLfbspUuEJoD9" target="_blank">
+<div class="feedback-layout">
 
-<button>
-GIVE FEEDBACK
+<!-- STATS SIDEBAR -->
+<div class="fb-stats">
+<div class="fb-avg-box">
+<div class="fb-avg-number" id="fbAvgNumber">0.0</div>
+<div class="fb-avg-stars" id="fbAvgStars">
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+</div>
+<div class="fb-avg-label" id="fbCount">0 reviews</div>
+</div>
+</div>
+
+<!-- FORM -->
+<div class="fb-form-wrap">
+<form id="feedbackForm" class="feedback-form">
+
+<div class="form-group">
+<label for="fbName">NAME</label>
+<input type="text" id="fbName" placeholder="Your name" required>
+</div>
+
+<div class="form-group">
+<label for="fbBook">FAVORITE BOOK</label>
+<div class="select-wrapper">
+<select id="fbBook" required>
+<option value="" disabled selected>Select a book</option>
+<option value="SAHAY">SAHAY</option>
+<option value="INDOVAR">INDOVAR</option>
+<option value="PARADOX">PARADOX</option>
+<option value="FRACTURE">FRACTURE</option>
+<option value="ASCENT">ASCENT</option>
+<option value="ALL">ALL OF THEM</option>
+</select>
+<i class="fa-solid fa-chevron-down select-arrow"></i>
+</div>
+</div>
+
+<div class="form-group">
+<label>RATING</label>
+<div class="star-input" id="starInput">
+<i class="fa-regular fa-star" data-val="1"></i>
+<i class="fa-regular fa-star" data-val="2"></i>
+<i class="fa-regular fa-star" data-val="3"></i>
+<i class="fa-regular fa-star" data-val="4"></i>
+<i class="fa-regular fa-star" data-val="5"></i>
+</div>
+<input type="hidden" id="fbRating" value="0">
+</div>
+
+<div class="form-group">
+<label for="fbMessage">YOUR THOUGHTS</label>
+<textarea id="fbMessage" rows="3" placeholder="Write your feedback or theories..." required></textarea>
+</div>
+
+<button type="submit" class="submit-btn">
+SUBMIT <i class="fa-solid fa-paper-plane"></i>
 </button>
 
-</a>
+</form>
+
+<div id="fbSuccess" class="fb-success">
+<i class="fa-solid fa-circle-check"></i> Feedback saved!
+</div>
+</div>
+
+</div>
+
+<!-- FEEDBACK LIST -->
+<div class="fb-db">
+<h3>FEEDBACK DATABASE</h3>
+<div id="fbList" class="fb-list"></div>
+</div>
 
 </section>
 
