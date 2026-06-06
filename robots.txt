@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ishaanks09.github.io/Indoverse/sitemap.xml
