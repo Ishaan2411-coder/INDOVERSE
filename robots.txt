@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ishaan2411-coder.github.io/INDOVERSE/sitemap.xml
