@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDOVERSE</title>
+
+    <!-- Favicon (Planet from Logo) -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- COOL INTRO OVERLAY -->
+    <div id="intro-overlay">
+        <div class="intro-content">
+            <div class="intro-visual-wrapper">
+                <div class="intro-glow"></div>
+                <div class="orbit-spinner"></div>
+                <img src="Logo.png" alt="INDOVERSE" class="intro-logo">
+            </div>
+            <div class="intro-subtitle">PHASE 2 IS LIVE FOR FREE</div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <!-- Sleek inverted Logo Image for Dark Theme -->
+            <img src="Logo.png" alt="INDOVERSE" class="hero-logo">
+            <p>A connected cinematic universe built through stories.</p>
+            <button onclick="scrollToBooks()">EXPLORE BOOKS</button>
+        </div>
+    </section>
+
+    <!-- DISCLAIMER (Red Box) -->
+    <section class="disclaimer-section">
+        <div class="disclaimer-box">
+            <h3>DISCLAIMER</h3>
+            <p>This is a work of fiction. Names, characters, places, and incidents are either products of the author's imagination or used fictitiously. Any resemblance to actual events, locales, or persons, living or dead, is entirely coincidental. We sincerely apologize if any content unintentionally hurts anyone's sentiments; this story has absolutely no intention of causing offense or hurt to any individual, community, or belief.</p>
+        </div>
+    </section>
+
+    <!-- PHASE 1 SECTION -->
+    <section class="phase-section" id="books">
+        <h2 class="section-title">PHASE 1</h2>
+        <div class="books-grid">
+            <a href="SAHAY.pdf" target="_blank" class="book-card sahay">
+                <img src="SAHAY BOOK.png" alt="SAHAY">
+                <h3>SAHAY</h3>
+            </a>
+            <a href="INDOVAR.pdf" target="_blank" class="book-card indovar">
+                <img src="INDOVAR BOOK.png" alt="INDOVAR">
+                <h3>INDOVAR</h3>
+            </a>
+            <a href="PARADOX.pdf" target="_blank" class="book-card paradox">
+                <img src="PARADOX BOOK.png" alt="PARADOX">
+                <h3>PARADOX</h3>
+            </a>
+            <a href="FRACTURE.pdf" target="_blank" class="book-card fracture">
+                <img src="FRACTURE BOOK.png" alt="FRACTURE">
+                <h3>FRACTURE</h3>
+            </a>
+            <a href="ASCENT.pdf" target="_blank" class="book-card ascent">
+                <img src="ASCENT BOOK.png" alt="ASCENT">
+                <h3>ASCENT</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- PHASE 2 SECTION -->
+    <section class="phase-section" id="phase2">
+        <h2 class="section-title">PHASE 2</h2>
+        <div class="books-grid">
+            <a href="SANJIVANI.pdf" target="_blank" class="book-card sanjivani">
+                <img src="SANJIVANI BOOK.png" alt="SANJIVANI">
+                <h3>SANJIVANI</h3>
+            </a>
+            <a href="GLITCH.pdf" target="_blank" class="book-card glitch">
+                <img src="GLITCH BOOK.png" alt="GLITCH">
+                <h3>GLITCH</h3>
+            </a>
+            <a href="NAVMANI.pdf" target="_blank" class="book-card navmani">
+                <img src="NAVMANI BOOK.png" alt="NAVMANI">
+                <h3>NAVMANI</h3>
+            </a>
+            <a href="MISSION ANTIDOTE.pdf" target="_blank" class="book-card mission-antidote">
+                <img src="MISSION ANTIDOTE BOOK.png" alt="MISSION ANTIDOTE">
+                <h3>MISSION ANTIDOTE</h3>
+            </a>
+            <a href="DESTINY.pdf" target="_blank" class="book-card destiny">
+                <img src="DESTINY BOOK.png" alt="DESTINY">
+                <h3>DESTINY</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- FEEDBACK SECTION (Google Form) -->
+    <section class="feedback">
+        <h2>FEEDBACK</h2>
+        <p>Enter the archives. Leave your thoughts.</p>
+        <a href="https://forms.gle/96thjLfbspUuEJoD9" target="_blank">
+            <button>GIVE FEEDBACK</button>
+        </a>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <h2>CONNECT</h2>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/ishaanks09/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:singhscreations2026@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h1 class="section-title">ABOUT</h1>
+        
+        <!-- ABOUT BOOKS -->
+        <div class="accordion">
+            <button class="accordion-btn">
+                <span>ABOUT BOOKS</span>
+                <span class="arrow">⌄</span>
+            </button>
+            <div class="accordion-content text-content">
+                <p>Five connected books written in Hinglish to connect with a new generation of readers through cinematic storytelling.</p>
+            </div>
+        </div>
+
+        <!-- ABOUT AUTHOR -->
+        <div class="accordion">
+            <button class="accordion-btn">
+                <span>ABOUT AUTHOR</span>
+                <span class="arrow">⌄</span>
+            </button>
+            <div class="accordion-content text-content">
+                <p>Created by Ishaan Kr. Singh, a Class 11 student building a connected cinematic universe through stories and imagination.</p>
+            </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="accordion">
+            <button class="accordion-btn">
+                <span>COPYRIGHT</span>
+                <span class="arrow">⌄</span>
+            </button>
+            <div class="accordion-content text-content">
+                <p>© Ishaan Kr. Singh — INDOVERSE and all related stories, concepts, characters and universe elements are protected under copyright law. Unauthorized reproduction or distribution is prohibited.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
